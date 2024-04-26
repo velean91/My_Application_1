@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Перевод_двоичных_в_десятичные">Перевод двоичных в десятичные</string>
+    <string name="Десятичное_число">Десятичное число</string>
+    <string name="Перевод">Перевод</string>
+    <string name="Двоичное_число">Двоичное число</string>
+</resources>

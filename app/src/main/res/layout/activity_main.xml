@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Перевод_двоичных_в_десятичные"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/Десятичное_число"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextBin"
+        android:layout_width="355dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBin"
+        tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonTSL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/Перевод"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBin"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDec"
+        android:layout_width="355dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDec"
+        tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textBin"
+        android:layout_width="138dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/Двоичное_число"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDec"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
